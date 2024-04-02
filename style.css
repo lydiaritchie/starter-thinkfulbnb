@@ -7,18 +7,20 @@ body {
 h2 {
   font-size: 26px;
   font-weight: 400;
-  margin: 0 10px 10px 10px;
   text-align: center;
 }
 
 h3 {
   font-size: 18px;
   font-weight: 500;
+  align-self: flex-start;
+  margin-top: 30px;
 }
 
 p {
   line-height: 1.5em;
   margin: 0;
+  align-self: flex-start;
 }
 
 section {
@@ -31,8 +33,11 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
+
 }
+
+
 
 
 /* ---  Groups & Items --- */
@@ -40,6 +45,7 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item {
@@ -50,6 +56,18 @@ main img {
 .item-double {
   flex: 2;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about-img{
+  margin: 20px 0px 20px 0px;
+}
+
 
 /* -------  Navigation ------- */
 
@@ -98,7 +116,6 @@ form {
 
 form label {
   font-weight: bold;
-
 }
 
 form select,
@@ -112,7 +129,7 @@ form button {
   border: none;
   color: #fff;
   font-size: 24px;
-  padding: 15px;
+  padding: 10px;
   width: 100%;
 }
 
