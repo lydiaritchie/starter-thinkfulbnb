@@ -34,10 +34,7 @@ section.alternate-background {
 
 main img {
   width: 100%;
-
 }
-
-
 
 
 /* ---  Groups & Items --- */
@@ -45,16 +42,6 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.item {
-  flex: 1;
-  margin: 10px;
-}
-
-.item-double {
-  flex: 2;
 }
 
 .form {
@@ -133,7 +120,7 @@ form button {
   width: 100%;
 }
 
-.space-between {
+.element {
   display: flex;
   justify-content: space-between;
 }
@@ -149,9 +136,82 @@ footer p {
   padding: 20px;
 }
 
+
+
 /* -------  Media Query ------- */
 
 @media all and (min-width: 768px) {
+
+  h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  
+  /* -------  Navigation ------- */
+
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 40px;
+    }
+
+  /* -------  Search Form  ------- */
+    form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+   }
+   
+   .element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  form button {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  form select,
+  form input {
+   margin-bottom: 0px;
+  }
+
+/* ---  Groups & Items --- */
+  .group {
+    flex-direction: row;
+  }
+
+  .item {
+    flex: 1;
+    margin: 10px;
+    align-self: center;
+  }
+  
+  .item-double {
+    flex: 2;
+    margin:10px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: yellow;
+  }
+
+  /*-- About --*/
+
+  
 
 
 }
