@@ -172,10 +172,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 70px;
     width: 165px;
-    max-width: 160;
-
   }
 
   label {
@@ -194,9 +191,6 @@ footer p {
   input {
     margin-bottom: 0px;
     width: 90%;
-    justify-content: first baseline;
-
-
   }
 
 /* ---  Groups & Items --- */
