@@ -101,14 +101,15 @@ form {
   padding: 10px;
 }
 
-form label {
+label {
   font-weight: bold;
+  padding-right: 30px;
 }
 
-form select,
-form input {
+select,
+input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 60%;
 }
 
 form button {
@@ -164,7 +165,6 @@ footer p {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    flex-wrap: wrap;
     width: 100%;
    }
    
@@ -172,6 +172,14 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 70px;
+    width: 165px;
+    max-width: 160;
+
+  }
+
+  label {
+    padding-right: 0px;
 
   }
 
@@ -179,11 +187,16 @@ footer p {
     display: flex;
     flex-direction: column;
     margin: 0px;
+    min-width: 0;
   }
 
-  form select,
-  form input {
-   margin-bottom: 0px;
+  select,
+  input {
+    margin-bottom: 0px;
+    width: 90%;
+    justify-content: first baseline;
+
+
   }
 
 /* ---  Groups & Items --- */
